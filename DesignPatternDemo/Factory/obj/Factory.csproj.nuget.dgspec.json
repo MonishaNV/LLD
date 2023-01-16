@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/DesignPatternDemo/AbstractFactory.csproj": {}
+    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Factory.csproj": {}
   },
   "projects": {
-    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/DesignPatternDemo/AbstractFactory.csproj": {
+    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/DesignPatternDemo/AbstractFactory.csproj",
-        "projectName": "DesignPatternDemo",
-        "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/DesignPatternDemo/AbstractFactory.csproj",
+        "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Factory.csproj",
+        "projectName": "Factory",
+        "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Factory.csproj",
         "packagesPath": "/Users/monishanv/.nuget/packages/",
-        "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/DesignPatternDemo/obj/",
+        "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/monishanv/.nuget/NuGet/NuGet.Config"
