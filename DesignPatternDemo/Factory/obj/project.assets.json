@@ -14,7 +14,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Adaptor.csproj",
-      "projectName": "Adaptor",
+      "projectName": "Factory",
       "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/Adaptor.csproj",
       "packagesPath": "/Users/monishanv/.nuget/packages/",
       "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Factory/obj/",

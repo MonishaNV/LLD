@@ -1,9 +1,34 @@
 ﻿<Properties StartupConfiguration="{3B4AC68C-4A26-4877-9599-37F72E7C7332}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Builder PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.AbstractFactory PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Adaptor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Observer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Singleton PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Singleton/Program.cs">
+    <Files>
+      <File FileName="Singleton/Program.cs" Line="2" Column="17" />
+      <File FileName="Singleton/EmptyClass.cs" Line="2" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DesignPatternDemo" expanded="True">
+            <Node name="AbstractFactory" expanded="True" />
+            <Node name="Adaptor" expanded="True" />
+            <Node name="Builder" expanded="True" />
+            <Node name="Facade" expanded="True" />
+            <Node name="Observer" expanded="True" />
+            <Node name="Singleton" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Singleton PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Facade PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
