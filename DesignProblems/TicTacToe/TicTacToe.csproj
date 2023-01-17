@@ -10,11 +10,11 @@
   <ItemGroup>
     <None Remove="Interface\" />
     <None Remove="Enumerations\" />
-    <None Remove="Implementation\" />
+    <None Remove="Factory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interface\" />
     <Folder Include="Enumerations\" />
-    <Folder Include="Implementation\" />
+    <Folder Include="Factory\" />
   </ItemGroup>
 </Project>
