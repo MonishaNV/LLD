@@ -1,18 +1,8 @@
 ﻿<Properties StartupConfiguration="{3B4AC68C-4A26-4877-9599-37F72E7C7332}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Singleton PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Facade PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Adaptor PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.AbstractFactory PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Singleton/Program.cs">
     <Files>
       <File FileName="Singleton/Program.cs" Line="7" Column="35" />
-      <File FileName="Singleton/EmptyClass.cs" />
+      <File FileName="Singleton/EmptyClass.cs" Line="21" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,12 +13,24 @@
             <Node name="Builder" expanded="True" />
             <Node name="Facade" expanded="True" />
             <Node name="Observer" expanded="True" />
-            <Node name="Singleton" expanded="True" />
+            <Node name="Singleton" expanded="True">
+              <Node name="EmptyClass.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Facade PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Observer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Adaptor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AbstractFactory PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Singleton PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Builder PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -1,104 +1,46 @@
 ﻿using System;
 namespace TicTacToe
 {
-	public class Board
+	public class Board: IBoard
 	{
-		int[,]? contentOfBoard;
-		Players CurrentPlayer;
-		public Board(Players player)
-		{
-			contentOfBoard = new int[3, 3] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
-			CurrentPlayer = player;
-		}
+        public CellState[] State { get; set; }
+        public int Dimension { get; set; }
 
-		public void GetBoardStatus()
-		{
-			Console.WriteLine("state 1 = player 1, state 0 = empty cell, state -1 = player 2");
-			Console.WriteLine("Status of board is as follows");
-			int m = 3;
-			int n = 3;
-			int i, j;
-            for (i = 0; i < m; i++)
+        private Board() { }
+
+        private static readonly Lazy<Board> obj = new Lazy<Board>(() => new Board());
+        public static Board Instance
+        {
+            get
             {
-                for (j = 0; j < n; j++)
+                return obj.Value;
+            }
+        }
+
+        public void SetBoard(int n)
+        {
+            Dimension = n;
+            State = new CellState[n * n];
+            for (int i = 0; i < n; i++) State[i] = CellState.Blank;
+        }
+
+        public void DisplayBoard()
+        {
+            for (int r=0; r<Dimension; r++)
+            {
+                for(int c=0; c<Dimension; c++)
                 {
-                    Console.Write(contentOfBoard[i, j] + "\t");
+                    CellState state = State[r * Dimension + c];
+                    Console.Write(state + "\t");
                 }
                 Console.WriteLine();
             }
         }
 
-		public Players MakeMove(int row, int col, Players currentPlayer)
-		{
-			CurrentPlayer = currentPlayer;
-			contentOfBoard[row, col] = currentPlayer.Symbol;
-			return FindWinner();
-		}
-
-		public Players? FindWinner()
-		{
-			Players winner = null;
-			if (CheckDiagonal() || CheckHorizontal() || CheckVerticle())
-			{
-				winner = CurrentPlayer;
-			}
-			return winner;
-		}
-
-        
-        private bool CheckHorizontal()
-		{
-			bool result = false;
-			int count = 0;
-			for(int i = 0; i<= 2; i++)
-			{
-				count = 0;
-				for (int j =0; j<=2;j++)
-				{
-					count += contentOfBoard[i, j];
-				}
-				if(count == 3 || count == -3)
-				{
-					return true;
-				}
-			}
-			return result;
-		}
-
-		private bool CheckVerticle()
-		{
-			bool result = false;
-            int count = 0;
-            for (int j = 0; j <= 2; j++)
-            {
-                count = 0;
-                for (int i = 0; i <= 2; i++)
-                {
-                    count += contentOfBoard[i, j];
-                }
-                if (count == 3 || count == -3)
-                {
-                    return true;
-                }
-            }
-            return result;
-		}
-
-		private bool CheckDiagonal()
-		{
-			bool result = false;
-			int count = 0;
-			int countReverseDiagonal = 0;
-			for(int i=0; i<= 2; i++)
-			{
-				count += contentOfBoard[i,i];
-				countReverseDiagonal += contentOfBoard[i, 2 - i];
-			}
-			if (count == 3 || count == -3 || countReverseDiagonal == 3 || countReverseDiagonal == -3)
-				return true;
-			return result;
-		}
-
-	}
+        public void SetCell(int cellNumber, CellState cellState)
+        {
+            State[cellNumber - 1] = cellState;
+        }
+    }
 }
 
