@@ -9,13 +9,14 @@ public class BoardTest
     public void SetBoard()
     {
         //Arrange
-        CellState[] expectedBoardState = new CellState[4] { CellState.Blank, CellState.Blank, CellState.Blank, CellState.Blank };
+        const int dimension = 2;
+        CellState[] expectedBoardState = new CellState[dimension*dimension] { CellState.Blank, CellState.Blank, CellState.Blank, CellState.Blank };
 
         //Act
-        _boardInstance.SetBoard(2);
+        _boardInstance.SetBoard(dimension);
 
         //Assert
-        for(int i=0; i<4; i++)
+        for(int i=0; i<dimension*dimension; i++)
         {
             Assert.AreEqual(expectedBoardState[i], _boardInstance.State[i]);
 

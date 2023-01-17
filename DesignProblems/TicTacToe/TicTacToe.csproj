@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Interface\" />
+    <None Remove="Enumerations\" />
+    <None Remove="Implementation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Enumerations\" />
+    <Folder Include="Implementation\" />
+  </ItemGroup>
 </Project>
