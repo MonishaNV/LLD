@@ -24,6 +24,7 @@ public class BoardTest
 
     }
 
+    [TestMethod]
     public void SetCell()
     {
         //Arrange

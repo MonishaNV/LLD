@@ -18,4 +18,10 @@
   <ItemGroup>
     <ProjectReference Include="..\TicTacToe\TicTacToe.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="FactoryTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FactoryTests\" />
+  </ItemGroup>
 </Project>
