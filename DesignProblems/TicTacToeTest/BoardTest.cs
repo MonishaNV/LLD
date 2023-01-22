@@ -38,5 +38,19 @@ public class BoardTest
         Assert.AreEqual(_boardInstance.State[3], CellState.O);
     }
 
+    [TestMethod]
+    [DataRow(new CellState[] {CellState.O, CellState.O, CellState.Blank, CellState.X}, CellState.O)]
+    [DataRow(new CellState[] { CellState.X, CellState.O, CellState.X, CellState.Blank}, CellState.X)]
+    [DataRow(new CellState[] { CellState.Blank, CellState.X, CellState.Blank, CellState.X }, CellState.Blank)]
+    [DataRow(new CellState[] { CellState.O, CellState.X, CellState.Blank, CellState.X }, CellState.X)]
+
+    public void WinnerTest(CellState[] boardState, CellState expectedReturn)
+    {
+        _boardInstance.SetBoard(2);
+        _boardInstance.State = boardState;
+        Assert.AreEqual(expectedReturn, _boardInstance.GetWinner());
+
+    }
+
     private Board _boardInstance = Board.Instance;
 }

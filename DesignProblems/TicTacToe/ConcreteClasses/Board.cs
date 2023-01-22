@@ -32,16 +32,6 @@ namespace TicTacToe
 
         public void DisplayBoard()
         {
-            //Console.WriteLine("-------current status of board-------");
-            //for (int r = 0; r < Dimension; r++)
-            //{
-            //    for (int c = 0; c < Dimension; c++)
-            //    {
-            //        CellState state = State[r * Dimension + c];
-            //        Console.Write(state + "\t");
-            //    }
-            //    Console.WriteLine();
-            //}
             Console.WriteLine();
             for (int r = 0; r < Board.Instance.Dimension; r++)
             {

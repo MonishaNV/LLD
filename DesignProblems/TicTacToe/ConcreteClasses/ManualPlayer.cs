@@ -13,28 +13,6 @@ namespace TicTacToe.ConcreteClasses
 
         public void MakeMove()
         {
-            //Console.WriteLine();
-            //for (int r = 0; r < Board.Instance.Dimension; r++)
-            //{
-            //    for (int c = 0; c < Board.Instance.Dimension; c++)
-            //    {
-            //        CellState state = Board.Instance.State[r * Board.Instance.Dimension + c];
-            //        if(state == CellState.Blank)
-            //        {
-            //            int cellNumber = r * Board.Instance.Dimension + c;
-            //            int x = cellNumber + 1;
-            //            Console.Write( x + "\t");
-
-            //        }
-            //        else
-            //        {
-            //            Console.Write(state + "\t");
-            //        }
-
-            //    }
-            //    Console.WriteLine();
-            //}
-            //Console.WriteLine();
             Board.Instance.DisplayBoard();
             Console.WriteLine("Please enter a valid cell number");
             int n = Convert.ToInt32(Console.ReadLine());
