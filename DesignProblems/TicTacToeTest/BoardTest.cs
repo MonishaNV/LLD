@@ -10,7 +10,8 @@ public class BoardTest
     {
         //Arrange
         const int dimension = 2;
-        CellState[] expectedBoardState = new CellState[dimension*dimension] { CellState.Blank, CellState.Blank, CellState.Blank, CellState.Blank };
+        CellState[] expectedBoardState = new CellState[dimension*dimension]
+                                        { CellState.Blank, CellState.Blank, CellState.Blank, CellState.Blank };
 
         //Act
         _boardInstance.SetBoard(dimension);
@@ -31,10 +32,10 @@ public class BoardTest
         _boardInstance.SetBoard(3);
 
         //Act
-        _boardInstance.SetCell(4, CellState.PlayerO);
+        _boardInstance.SetCell(4, CellState.O);
 
         //Assert
-        Assert.AreEqual(_boardInstance.State[3], CellState.PlayerO);
+        Assert.AreEqual(_boardInstance.State[3], CellState.O);
     }
 
     private Board _boardInstance = Board.Instance;

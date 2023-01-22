@@ -6,6 +6,7 @@ namespace TicTacToe
 		public void SetBoard(int dimension);
 		public void DisplayBoard();
 		public void SetCell(int cellNumber, CellState cellState);
+		public CellState GetWinner();
 
 	}
 }

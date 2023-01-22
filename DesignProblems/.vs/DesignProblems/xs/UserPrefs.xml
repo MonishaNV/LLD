@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{DB6F0A44-D375-48B6-8F20-8ACEEB422C63}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.TicTacToe PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TicTacToeTest/FactoryTests/PlayerFactoryTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TicTacToe/Program.cs">
     <Files>
-      <File FileName="TicTacToe/Factory/PlayerFactory.cs" Line="1" Column="1" />
-      <File FileName="TicTacToeTest/Usings.cs" Line="1" Column="1" />
-      <File FileName="TicTacToeTest/BoardTest.cs" Line="27" Column="16" />
-      <File FileName="TicTacToeTest/FactoryTests/PlayerFactoryTest.cs" Line="21" Column="29" />
+      <File FileName="TicTacToe/ConcreteClasses/Board.cs" />
+      <File FileName="TicTacToe/ConcreteClasses/AutomatedPlayer.cs" />
+      <File FileName="TicTacToe/Interface/IPlayer.cs" />
+      <File FileName="TicTacToe/ConcreteClasses/ManualPlayer.cs" />
+      <File FileName="TicTacToe/Factory/PlayerFactory.cs" />
+      <File FileName="TicTacToe/Program.cs" Line="35" Column="1" />
+      <File FileName="TicTacToe/Interface/IBoard.cs" />
+      <File FileName="TicTacToe/Enumerations/CellState.cs" />
+      <File FileName="TicTacToeTest/BoardTest.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,25 +24,23 @@
               <Node name="Interface" expanded="True" />
             </Node>
             <Node name="TicTacToeTest" expanded="True">
-              <Node name="FactoryTests" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="DesignProblems" expanded="True">
-            <Node name="TicTacToeTest" expanded="True">
-              <Node name="TicTacToeTest" expanded="True">
-                <Node name="BoardTest" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
               </Node>
+              <Node name="FactoryTests" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../TicTacToe/ConcreteClasses/Board.cs" line="28" column="16" endLine="28" endColumn="26" offsetX="-1" offsetY="-1" expression="EmptyCells" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

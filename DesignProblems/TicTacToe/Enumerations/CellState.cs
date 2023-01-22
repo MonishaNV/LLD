@@ -4,8 +4,8 @@ namespace TicTacToe
 	public enum CellState
 	{
 		Blank,
-		PlayerO,
-		PlayerX
+		O,
+		X
 		
 	}
 }

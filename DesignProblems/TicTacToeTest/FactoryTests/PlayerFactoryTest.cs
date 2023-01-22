@@ -10,16 +10,14 @@ namespace TicTacToeTest.FactoryTests
 	public class PlayerFactoryTest
 	{
 		[TestMethod]
-		[DataRow(PlayerType.ManualPlayer)]
-        [DataRow(PlayerType.AutomaticPlayer)]
-        public void CreationOfPlayer(PlayerType playerType)
+        public void CreationOfPlayer()
 		{
-			
-			IPlayer player = PlayerFactory.getPlayer(playerType);
+			var player = PlayerFactory.getPlayer(PlayerType.AutomaticPlayer);
+			Assert.IsInstanceOfType(player, typeof(AutomatedPlayer));
 
-			//TODO: check for individual type
-			Assert.IsNotNull(player);
-		}
+            player = PlayerFactory.getPlayer(PlayerType.ManualPlayer);
+            Assert.IsInstanceOfType(player, typeof(ManualPlayer));
+        }
 
 
 	}
