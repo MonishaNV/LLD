@@ -64,21 +64,15 @@ namespace TicTacToe
 
         public CellState GetWinner()
         {
-            CellState state = CellState.Blank;
-            state = CheckRow();
-            if(state == CellState.Blank)
+            var find = new[]
             {
-                state = CheckCol(); 
-            }
-            if (state == CellState.Blank)
-            {
-                state = CheckDiagonal();
-            }
-            if (state == CellState.Blank)
-            {
-                state = CheckReverseDiagonal();
-            }
-            return state;
+                CheckRow(),
+                CheckCol(),
+                CheckDiagonal(),
+                CheckReverseDiagonal()
+            };
+
+            return find.FirstOrDefault(cs => cs != CellState.Blank);
 
         }
 
@@ -141,6 +135,7 @@ namespace TicTacToe
             for (int r = 0; r < Dimension; r++)
             {
                 CellState initial = State[r * Dimension];
+                
                 for (int c = 1; c < Dimension; c++)
                 {
                     if (initial != State[r * Dimension + c])
