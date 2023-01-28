@@ -22,7 +22,7 @@ namespace Decorator
 
         public override double GetCost()
         {
-            return basePizza.GetCost() + 30.0;
+            return basePizza.GetCost() + 50.0;
         }
     }
 
