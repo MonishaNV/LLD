@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Singleton/Singleton.csproj",
-      "projectName": "Singleton",
-      "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Singleton/Singleton.csproj",
+      "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj",
+      "projectName": "Decorator",
+      "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj",
       "packagesPath": "/Users/monishanv/.nuget/packages/",
-      "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Singleton/obj/",
+      "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/monishanv/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Observer/Observer.csproj": {}
+    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj": {}
   },
   "projects": {
-    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Observer/Observer.csproj": {
+    "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Observer/Observer.csproj",
-        "projectName": "Observer",
-        "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Observer/Observer.csproj",
+        "projectUniqueName": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj",
+        "projectName": "Decorator",
+        "projectPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/Decorator.csproj",
         "packagesPath": "/Users/monishanv/.nuget/packages/",
-        "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Observer/obj/",
+        "outputPath": "/Users/monishanv/Repositories/LLD/DesignPatternDemo/Decorator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/monishanv/.nuget/NuGet/NuGet.Config"
